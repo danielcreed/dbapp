@@ -7,7 +7,7 @@ from staff.models import Staff
 class Listing(models.Model):
     User = models.ForeignKey(Staff, on_delete=models.DO_NOTHING, blank=True)
     VendorName = models.CharField(max_length=200)
-    Website = models.SlugField(max_length=100 )
+    Website = models.CharField(max_length=100 )
    # Country = models.BooleanField(default=False)
     Countries = (
        ('Canada', 'Canada'),
